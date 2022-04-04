@@ -25,7 +25,6 @@ public class ContactAcivity extends AppCompatActivity {
     FirebaseAuth auth;
     DatabaseReference AllContacts;
     FirebaseUser user;
-    DataSnapshot dataSnapshot;
     Button next;
 
     int clickcount=0;
@@ -93,7 +92,7 @@ public class ContactAcivity extends AppCompatActivity {
             editTextContactName.getText().clear();
         }else{
             showMessage("Contact overload", "You can add up to 5 contacts.");
-            startActivity(new Intent(getApplicationContext(), FallActivity.class));
+            startActivity(new Intent(getApplicationContext(), MainActivity2.class));
         }
 
 
@@ -103,7 +102,7 @@ public class ContactAcivity extends AppCompatActivity {
 
         public void next(View view){
 
-        startActivity(new Intent(getApplicationContext(), FallActivity.class));
+        startActivity(new Intent(getApplicationContext(), MainActivity2.class));
 
         }
 

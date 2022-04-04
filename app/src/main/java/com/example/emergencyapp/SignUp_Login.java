@@ -79,7 +79,7 @@ public class SignUp_Login extends AppCompatActivity {
                 if (task.isSuccessful()){
                     showMessage("Success","User signed in successfully!");
 
-                    startActivity(new Intent(getApplicationContext(), ContactAcivity.class));
+                    startActivity(new Intent(getApplicationContext(), MainActivity2.class));
                 }else {
                     showMessage("Error",task.getException().getLocalizedMessage());
                 }
